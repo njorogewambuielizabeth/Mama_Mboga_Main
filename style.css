@@ -15,7 +15,7 @@ header {
     justify-content: space-between;
     align-items: center;
   }
-  #image{
+  #imag{
     width: 10%;
   }
   
@@ -26,31 +26,31 @@ header {
     text-decoration: none;
   }
   
-  .menu {
+  .menu1 {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
   }
   
-  .menu li {
+  .menu1 li {
     position: relative;
   }
   
-  .menu li a {
+  .menu1 li a {
     display: block;
     padding: 10px;
     color: #333;
     text-decoration: none;
   }
   
-  .menu li:hover > a,
-  .menu .dropdown:hover > a {
+  .menu1 li:hover > a,
+  .menu1 .dropdown:hover > a {
     background-color: #00b300;
     color: #fff;
   }
   
-  .menu .dropdown ul {
+  .menu1 .dropdown ul {
     display: none;
     position: absolute;
     top: 100%;
@@ -61,11 +61,11 @@ header {
     z-index: 999;
   }
   
-  .menu .dropdown:hover > ul {
+  .menu1 .dropdown:hover > ul {
     display: block;
   }
   
-  .menu .dropdown ul li a {
+  .menu1 .dropdown ul li a {
     color: #fff;
   }
   
@@ -78,7 +78,7 @@ header {
       display: none;
     }
     
-    .hamburger-menu {
+    .hamburger-menu1 {
       display: block;
       cursor: pointer;
     }
@@ -103,15 +103,15 @@ header {
       transform: rotate(45deg) translate(-8px, -8px);
     }
     
-    .menu-dropdown {
+    .menu1-dropdown {
       display: none;
     }
     
-    .menu li.dropdown {
+    .menu1 li.dropdown {
       position: static;
     }
     
-    .menu li.dropdown > a:after {
+    .menu1 li.dropdown > a:after {
       content: '\25bc';
       display: inline-block;
       margin-left: 5px;
@@ -314,6 +314,177 @@ header {
     }
 
   } 
+
+  *{
+    margin: 0;
+    padding: 0;
+    background-color:rgb(233, 236, 217);
+
+}
+.avail{
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.avail span{
+    color: rgb(138, 182, 72);
+}
+.fruity{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+}
+.fruity i{
+    color: rgb(138, 182, 72);
+    margin-left: 230px;
+    position: relative;
+
+
+}
+.fruity p{
+    position: absolute;
+    margin-left: 10px;
+}
+.fruity div{
+    margin:30px 30px;
+    /* background-color: antiquewhite; */
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+
+}
+
+  /* #pine {
+    background-color: yellow;
+    color: blue;
+  } */
+  
+
+.vegies{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    margin-top: 40px;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+
+ 
+}
+.vegies i{
+    color: rgb(138, 182, 72);
+margin-left: 230px;
+}
+.vegies div{
+    margin:30px 30px;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+}
+.vegies div :hover{
+    animation: bounce 0.5s infinite;
+
+}
+.vegies p{
+    position: absolute;
+    padding-left: 10px;
+
+}
+#image{
+    width: 80%;
+    height: 80%;
+    /* opacity: 0.5; */
+}
+#image1{
+    width: 100%;
+    height: 80%; 
+    /* opacity: 0.5; */
+
+}
+#image2{
+    width: 90%;
+    height: 80%;
+    /* opacity: 0.5; */
+ 
+}
+#image3{
+    width: 80%;
+    height: 80%; 
+    /* opacity: 0.5; */
+
+}
+#see{
+    width: 150px;
+    height: 56px;
+    background-color: chartreuse;
+    border: none;
+    border-radius: 30px;
+    margin-left: 580px;
+}
+
+@media(max-width:800px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .fruity{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 10px;
+    }
+    #see{
+        position: absolute;
+        width: 150px;
+        height: 56px;
+        background-color: chartreuse;
+        border: none;
+        border-radius: 30px;
+        float: left;
+        /* margin-right: 300px; */
+        /* margin-left: 580px; */
+    }
+    .vegies{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 10px;
+        margin-top: 40px;
+        position: relative;
+        transition: transform 0.3s ease-in-out;
+    
+     
+    }
+    .vegies div{
+        width: 45%;
+    }
+    .fruity div{
+        width: 45%;
+
+    }
+    #image{
+        width: 80%;
+        height: 80%;
+    }
+    #image1{
+        width: 100%;
+        height: 80%; 
+    
+    }
+    #image2{
+        width: 90%;
+        height: 80%;
+     
+    }
+    #image3{
+        width: 80%;
+        height: 80%; 
+    
+    }
+    .avail{
+        text-align: left;
+        font-size: 25px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+
+}
 
 
 
